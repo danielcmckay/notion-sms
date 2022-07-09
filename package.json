@@ -19,7 +19,7 @@
   "typings": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node lib/main.js",
+    "start": "npm run build && node --optimize_for_size --max_old_space_size=460 lib/main.js",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build",
     "test": "jest"
