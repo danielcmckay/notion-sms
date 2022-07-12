@@ -17,11 +17,9 @@
   ],
   "typings": "./lib/index.d.ts",
   "scripts": {
-    "install": "npm install",
     "build": "tsc",
     "start": "npm run build && npm run test && node lib/main.js",
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "prepublish": "npm run install && npm run build",
     "test": "jest"
   },
   "devDependencies": {
