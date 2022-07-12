@@ -7,7 +7,7 @@ export function runServer() {
   const app = express();
   const PORT = process.env.PORT;
 
-  app.get("/sms", async (req) => {
+  app.get("/sms", async (req: express.Request) => {
     console.log("Received message: " + req.query.Body);
 
     try {
