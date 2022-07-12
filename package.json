@@ -18,7 +18,7 @@
   "typings": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && npm run test && node lib/main.js",
+    "start": "npm run build && node lib/main.js",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "test": "jest"
   },
